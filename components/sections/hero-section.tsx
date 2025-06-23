@@ -29,7 +29,7 @@ export function HeroSection() {
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="images/21.jpg"
               alt="Bugema Adventist Primary School"
               width={800}
               height={600}

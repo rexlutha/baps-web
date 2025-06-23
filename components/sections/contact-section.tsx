@@ -9,17 +9,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: "Bugema, Wakiso District, Uganda",
+    details: "Bugema,Luweero District, Uganda",
   },
   {
     icon: Phone,
     title: "Phone",
-    details: "+256 123 456 789",
+    details: "+256 741 949 648/+256 778 565 548",
   },
   {
     icon: Mail,
     title: "Email",
-    details: "info@bugemaprimary.ac.ug",
+    details: "bugemaadv@gmail.com",
   },
   {
     icon: Clock,
@@ -35,7 +35,7 @@ export function ContactSection() {
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have questions about admissions or want to learn more about our school? We'd love to hear from you.
+            Ready to take the next step in your child's education, or just curious about what makes Bugema Adventist Primary School special? We're excited to connect with you. Don't hesitate to reach out!
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export function ContactSection() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Enter your message" rows={5} />
+                <Textarea id="message" placeholder="Enter your message" rows={7} />
               </div>
               <Button className="w-full">Send Message</Button>
             </CardContent>

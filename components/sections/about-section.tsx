@@ -5,6 +5,7 @@ const features = [
   {
     icon: BookOpen,
     title: "Quality Education",
+    image: "images/we.jpg",
     description: "Comprehensive curriculum designed to develop critical thinking and academic excellence.",
   },
   {
@@ -19,8 +20,8 @@ const features = [
   },
   {
     icon: Heart,
-    title: "Caring Environment",
-    description: "Safe, supportive atmosphere where every child feels valued and loved.",
+    title: "Nurturing atmosphere",
+    description: "Inclusive and cherishing environment.",
   },
 ]
 
@@ -29,10 +30,11 @@ export function AboutSection() {
     <section className="py-20 bg-muted/30">
       <div className="container">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold">Why Choose Bugema Adventist Primary?</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold">Why Bugema Adventist Primary School?</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We provide a holistic education that combines academic excellence with Christian values, preparing students
-            for success in life and service to others.
+           Our curriculum extends beyond textbooks, fostering critical thinking, creativity, and a strong sense of community. Our dedicated educators are committed to nurturing each child's intellectual, spiritual, and social growth in a safe and supportive God fearing environment.
+
+
           </p>
         </div>
 

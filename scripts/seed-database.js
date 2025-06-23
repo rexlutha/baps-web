@@ -93,7 +93,7 @@ async function seedDatabase() {
     await Settings.create({
       siteName: "Bugema Adventist Primary School",
       tagline: "Excellence in Christian Education",
-      description: "Nurturing young minds with values and knowledge",
+      description: "The fear of God is the beginning of wisdom ",
       primaryColor: "#3b82f6",
       secondaryColor: "#10b981",
       accentColor: "#f59e0b",

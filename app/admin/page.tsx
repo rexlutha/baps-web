@@ -4,15 +4,15 @@ import { Users, FileText, Calendar, Settings } from "lucide-react"
 const stats = [
   {
     title: "Total Students",
-    value: "450",
+    value: "500",
     icon: Users,
-    change: "+12 this month",
+    change: "+62 this month",
   },
   {
     title: "News Articles",
     value: "24",
     icon: FileText,
-    change: "+3 this week",
+    change: "+4 this week",
   },
   {
     title: "Upcoming Events",

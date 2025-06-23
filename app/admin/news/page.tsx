@@ -33,6 +33,7 @@ const newsArticles = [
     title: "Academic Excellence Awards",
     category: "Academics",
     status: "Draft",
+    image: ""
     date: "2024-01-05",
     author: "Admin",
   },

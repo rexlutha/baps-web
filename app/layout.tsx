@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Bugema Adventist Primary School",
-  description: "Excellence in Christian Education",
+  description: "The fear of God is the beginning of wisdom",
 }
 
 export default function RootLayout({
@@ -28,3 +28,5 @@ export default function RootLayout({
     </html>
   )
 }
+    
+

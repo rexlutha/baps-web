@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -9,27 +9,27 @@ import { Calendar } from "lucide-react"
 const news = [
   {
     id: 1,
-    title: "New Science Laboratory Opens",
+    title: "Science Laboratory Soon Opening",
     excerpt:
-      "Our state-of-the-art science laboratory is now open, providing students with hands-on learning opportunities.",
-    image: "/placeholder.svg?height=200&width=300",
-    date: "2024-01-15",
+      "Get ready for incredible hands-on learning opportunities that bring science to life for our students.",
+    image: "images/lab.webp",
+    date: "2025-10-15",
     category: "Facilities",
   },
   {
     id: 2,
     title: "Annual Sports Day Success",
     excerpt: "Students showcased their athletic talents in our annual sports day celebration.",
-    image: "/placeholder.svg?height=200&width=300",
-    date: "2024-01-10",
+    image: "images/666.webp",
+    date: "2025-07-10",
     category: "Events",
   },
   {
     id: 3,
     title: "Academic Excellence Awards",
     excerpt: "Celebrating our top-performing students in the recent academic assessments.",
-    image: "/placeholder.svg?height=200&width=300",
-    date: "2024-01-05",
+    image: "images/graduation.webp",
+    date: "2025-11-05",
     category: "Academics",
   },
 ]
