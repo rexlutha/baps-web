@@ -9,17 +9,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: "Bugema, Wakiso District, Uganda",
+    details: "Bugema, luweero District, Uganda",
   },
   {
     icon: Phone,
     title: "Phone",
-    details: "+256 123 456 789",
+    details: "+256 786 934813 / +256 775 034 301 ",
   },
   {
     icon: Mail,
     title: "Email",
-    details: "info@bugemaprimary.ac.ug",
+    details: "bugemaadvprimary@gmail.com",
   },
   {
     icon: Clock,

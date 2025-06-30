@@ -62,6 +62,11 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        brand: {
+          header: "#166534",   // deep green
+          main: "#f3f4f6",     // light blue
+          footer: "#4b006e",   // purple
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,8 +88,10 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    // ...rest of your config...
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  // ...rest of your config...
+};
 
 export default config
+// ...existing code...

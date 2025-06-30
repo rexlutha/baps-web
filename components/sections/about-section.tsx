@@ -4,26 +4,25 @@ import { BookOpen, Users, Award, Heart } from "lucide-react"
 const features = [
   {
     icon: BookOpen,
-    title: "Quality Education",
-    description: "Comprehensive curriculum designed to develop critical thinking and academic excellence.",
+    title: "Academic Excellence",
+    description: "A robust syllabus tailored to nurture reasoning abilities and intellectual growth.",
   },
   {
     icon: Users,
-    title: "Experienced Teachers",
-    description: "Dedicated and qualified educators committed to nurturing each child's potential.",
+    title: "Skilled Educators",
+    description: "Passionate and certified professionals devoted to unlocking every learner’s potential..",
   },
   {
     icon: Award,
-    title: "Character Building",
-    description: "Focus on moral and spiritual development alongside academic achievement.",
+    title: "Holistic Development",
+    description: "Nurturing both moral character and academic excellence in every learner.",
   },
   {
     icon: Heart,
-    title: "Caring Environment",
-    description: "Safe, supportive atmosphere where every child feels valued and loved.",
+    title: "Nurturing Atmosphere ",
+    description: "A secure and encouraging space where every child is respected and cherished.",
   },
 ]
-
 export function AboutSection() {
   return (
     <section className="py-20 bg-muted/30">
@@ -32,7 +31,7 @@ export function AboutSection() {
           <h2 className="text-3xl lg:text-4xl font-bold">Why Choose Bugema Adventist Primary?</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We provide a holistic education that combines academic excellence with Christian values, preparing students
-            for success in life and service to others.
+            Affodable fees and we deliver the best performance.
           </p>
         </div>
 

@@ -8,11 +8,11 @@ const SettingsSchema = new mongoose.Schema({
   },
   tagline: {
     type: String,
-    default: "Excellence in Christian Education",
+    default: "The fear of God is the beginning of wisdom",
   },
   description: {
     type: String,
-    default: "Nurturing young minds with values and knowledge",
+    default: "Train the child spiritually,mentally,and socially for this world and world to come.",
   },
   logo: {
     type: String,
@@ -45,15 +45,15 @@ const SettingsSchema = new mongoose.Schema({
   contactInfo: {
     address: {
       type: String,
-      default: "Bugema, Wakiso District, Uganda",
+      default: "Bugema, Luweero District, Uganda",
     },
     phone: {
       type: String,
-      default: "+256 123 456 789",
+      default: "+256 786 934 813 / +256 775 034 301",
     },
     email: {
       type: String,
-      default: "info@bugemaprimary.ac.ug",
+      default: "bugemaadvprimary@gmail.com",
     },
     officeHours: {
       type: String,

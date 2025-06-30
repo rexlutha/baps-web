@@ -8,8 +8,8 @@ import { Calendar, Clock, MapPin } from "lucide-react"
 const events = [
   {
     id: 1,
-    title: "Parent-Teacher Conference",
-    description: "Meet with your child's teachers to discuss academic progress and development.",
+    title: "Academic Progress Session",
+    description: "A collaborative meeting to assess your child’s performance and future goals.",
     date: "2024-02-15",
     time: "09:00 AM",
     location: "School Hall",
@@ -17,8 +17,8 @@ const events = [
   },
   {
     id: 2,
-    title: "Science Fair",
-    description: "Students will showcase their innovative science projects and experiments.",
+    title: "Young Scientists' Exhibition",
+    description: "Students demonstrate curiosity through exciting projects and experiments.",
     date: "2024-02-20",
     time: "10:00 AM",
     location: "Science Laboratory",
@@ -26,8 +26,8 @@ const events = [
   },
   {
     id: 3,
-    title: "Cultural Day Celebration",
-    description: "Celebrating the diverse cultures of our student community.",
+    title: "Cultural Showcase",
+    description: "Honoring the rich traditions and heritage of our diverse student body.",
     date: "2024-02-25",
     time: "02:00 PM",
     location: "School Grounds",

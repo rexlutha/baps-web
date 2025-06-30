@@ -126,3 +126,11 @@ export {
   NavigationMenuIndicator,
   NavigationMenuViewport,
 }
+// Add this inside your navigation bar component
+import Link from "next/link";
+
+// ...existing code...
+<Link href="/gallery" className="px-4 py-2 hover:text-indigo-600">
+  Gallery
+</Link>
+// ...existing code...
