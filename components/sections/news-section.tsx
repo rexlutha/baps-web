@@ -13,7 +13,7 @@ const news = [
     excerpt:
       "Our state-of-the-art science laboratory is now open, providing students with hands-on learning opportunities.",
     image: "/images/LIB.jpg?height=200&width=300",
-    date: "2024-01-15",
+    date: "2025-08-15",
     category: "Facilities",
   },
   {
@@ -22,7 +22,7 @@ const news = [
     excerpt: "Students showcased their athletic talents in our annual sports day celebration.",
         image: "/images/sport.jpg?height=200&width=300",
     
-    date: "2024-01-10",
+    date: "2025-08-10",
     category: "Events",
   },
   {
@@ -30,7 +30,7 @@ const news = [
     title: "Academic Excellence Awards",
     excerpt: "Celebrating our top-performing students in the recent academic assessments.",
     image: "/images/award.jpg?height=200&width=300",
-    date: "2024-01-05",
+    date: "2025-07-05",
     category: "Academics",
   },
 ]
