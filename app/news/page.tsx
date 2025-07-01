@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -5,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Calendar, User, ArrowRight } from "lucide-react"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import React, { useState } from "react"
 
 export default function NewsPage() {
   // Mock news data - in a real app, this would come from the database
@@ -70,6 +72,21 @@ export default function NewsPage() {
   ]
 
   const categories = ["All", "Events", "Academics", "Culture", "Facilities", "Sports"]
+
+  // Add state for email
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  // Add a handler for subscribe
+  const handleSubscribe = () => {
+    if (!email) {
+      setMessage("Please enter a valid email address.")
+      return
+    }
+    // Here you would send the email to your backend or API
+    setMessage("Thank you for subscribing!")
+    setEmail("")
+  }
 
   return (
     <>
@@ -200,11 +217,19 @@ export default function NewsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
-              <Button className="bg-orange-600 hover:bg-orange-700 px-8 py-3">Subscribe</Button>
+              <Button
+                className="bg-orange-600 hover:bg-orange-700 px-8 py-3"
+                onClick={handleSubscribe}
+              >
+                Subscribe
+              </Button>
             </div>
+            {message && <p className="mt-4 text-orange-200">{message}</p>}
           </div>
         </section>
       </div>
