@@ -23,7 +23,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <GraduationCap className="h-8 w-8 text-primary" />
-          <span className="font-bold text-xl">Bugema Adventist Primary</span>
+          <span className="font-bold text-xl">Bugema Adventist Primary School</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -27,11 +27,11 @@ const events = [
   {
     id: 3,
     title: "Cultural Day Celebration",
-    description: "Celebrating the diverse cultures of our student community.",
-    date: "2024-02-25",
+    description: "Celebrating the diverse cultures of our Nation community.",
+    date: "2025-09-25",
     time: "02:00 PM",
-    location: "School Grounds",
-    category: "Cultural",
+    location: "School Play Grounds",
+    category: "Independence Day Cererations",
   },
 ]
 

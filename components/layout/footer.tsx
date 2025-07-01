@@ -9,10 +9,10 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <GraduationCap className="h-6 w-6 text-primary" />
-              <span className="font-bold">Bugema Adventist Primary</span>
+              <span className="font-bold">Bugema Adventist Primary School</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Excellence in Christian Education. Nurturing young minds with values and knowledge.
+              . Nurturing young minds with values and knowledge.
             </p>
           </div>
 
@@ -51,22 +51,22 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>Bugema, Wakiso District, Uganda</span>
+                <span>Bugema, Luwero District, Uganda</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+256 123 456 789</span>
+                <span>+256 756632488</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@bugemaprimary.ac.ug</span>
+                <span>info@bugemaadvprimary@gmail.com3</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Bugema Adventist Primary School. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Bugema Adventist Primary School. All rights </p>
         </div>
       </div>
     </footer>
