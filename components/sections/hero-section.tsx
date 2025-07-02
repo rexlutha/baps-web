@@ -20,8 +20,9 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <Link href="/admissions">Apply Now</Link>
-              </Button>
+  <Link href="/admissions/form">Apply Now</Link>
+</Button>
+
               <Button size="lg" variant="outline" asChild>
                 <Link href="/about">Learn More</Link>
               </Button>
@@ -29,7 +30,8 @@ export function HeroSection() {
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="/school.jpg"
+              
               alt="Bugema Adventist Primary School"
               width={800}
               height={600}

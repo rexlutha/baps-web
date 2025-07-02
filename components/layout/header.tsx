@@ -2,9 +2,10 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image" // ✅ Import the Image component
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, GraduationCap } from "lucide-react"
+import { Menu } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,8 +22,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
+        {/* ✅ Logo and Site Name */}
         <Link href="/" className="flex items-center space-x-2">
-          <GraduationCap className="h-8 w-8 text-primary" />
+          {/* Logo image — place your logo in public folder as /logo.png */}
+          <Image
+            src="/logo.jpeg"
+            alt="School Logo"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
           <span className="font-bold text-xl">Bugema Adventist Primary</span>
         </Link>
 
@@ -58,9 +67,7 @@ export function Header() {
                 </Link>
               ))}
               <Button asChild>
-                <Link href="/admin" onClick={() => setIsOpen(false)}>
-                  Admin
-                </Link>
+                <Link href="/admin" onClick={() => setIsOpen(false)}>Admin</Link>
               </Button>
             </div>
           </SheetContent>

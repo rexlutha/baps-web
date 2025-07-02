@@ -59,7 +59,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@bugemaprimary.ac.ug</span>
+                <span>nfo@bugemaprimary.ac.ug</span>
               </div>
             </div>
           </div>
