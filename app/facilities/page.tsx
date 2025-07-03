@@ -1,4 +1,8 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Building, BookOpen, Computer, Gamepad2, Users, Utensils, Bus, Heart } from "lucide-react"
@@ -6,6 +10,8 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 
 export default function FacilitiesPage() {
+  const [showTourModal, setShowTourModal] = useState(false)
+
   const facilities = [
     {
       icon: Building,
@@ -227,14 +233,38 @@ export default function FacilitiesPage() {
               School is the right choice for your child's education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              <button
+                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                onClick={() => setShowTourModal(true)}
+              >
                 Schedule a Tour
               </button>
-              <button className="border border-white text-white hover:bg-white hover:text-purple-700 px-8 py-3 rounded-lg font-semibold transition-colors">
+              <Link
+                href="/contact"
+                className="border border-white text-white hover:bg-white hover:text-purple-700 px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
+              >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
+          {/* Modal for Schedule a Tour */}
+          {showTourModal && (
+            <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+              <div className="bg-white rounded-lg p-8 w-full max-w-md shadow-lg text-gray-900">
+                <h2 className="text-2xl font-bold mb-4">Schedule a Tour</h2>
+                <p className="mb-4">
+                  Please call <span className="font-semibold">+256 786 934 813</span> or email{" "}
+                  <span className="font-semibold">bugemaadvprimary@gmail.com</span> to arrange your campus tour.
+                </p>
+                <button
+                  className="mt-4 bg-purple-700 hover:bg-purple-800 text-white px-6 py-2 rounded"
+                  onClick={() => setShowTourModal(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </section>
       </div>
       {/* Footer with pink background */}

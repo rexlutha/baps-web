@@ -20,10 +20,9 @@ const news = [
     id: 2,
     title: "Annual Sports Day Success",
     excerpt: "Students showcased their athletic talents in our annual sports day celebration.",
-        image: "/images/sport.jpg?height=200&width=300",
-    
+    image: "/images/gallery/38.jpg?height=200&width=300",
     date: "2025-08-10",
-    category: "Events",
+    category: "Sports",
   },
   {
     id: 3,
@@ -33,9 +32,34 @@ const news = [
     date: "2025-07-05",
     category: "Academics",
   },
+  {
+    id: 4,
+    title: "Cultural Showcase Event",
+    excerpt: "A vibrant display of our students' diverse cultural heritage through music, dance, and art.",
+    image: "/images/gallery/33.jpg?height=200&width=300",
+    date: "2025-09-01",
+    category: "Culture",
+  },
+  {
+    id: 5,
+    title: "Inter-School Football Tournament",
+    excerpt: "Our school team reached the finals in the regional football tournament.",
+    image: "/images/playground.jpg?height=200&width=300",
+    date: "2025-09-10",
+    category: "Sports",
+  },
 ]
 
-export function NewsSection() {
+type NewsSectionProps = {
+  filter?: string
+}
+
+export function NewsSection({ filter = "All" }: NewsSectionProps) {
+  const filteredNews =
+    filter === "All"
+      ? news
+      : news.filter((item) => item.category?.toLowerCase() === filter.toLowerCase())
+
   return (
     <section className="py-20">
       <div className="container">
@@ -50,7 +74,7 @@ export function NewsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {news.map((article) => (
+          {filteredNews.map((article) => (
             <Card key={article.id} className="overflow-hidden">
               <div className="relative h-48">
                 <Image src={article.image || "/placeholder.svg"} alt={article.title} fill className="object-cover" />
