@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-
 import { BookOpen, Users, Award, Heart } from "lucide-react"
+
 export function AcademicsSection() {
   return (
     <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
@@ -10,6 +10,21 @@ export function AcademicsSection() {
           Our academic programs are designed to equip students with knowledge, critical thinking,
           and practical skills across a wide range of disciplines.
         </p>
+
+        {/* Academic Section Video */}
+        <div className="flex justify-center mb-12">
+          <div className="w-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/zIYOYZFPrb4?si=g1ohKMshrKOib049"
+              title="Academic Programs Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* UPPER */}

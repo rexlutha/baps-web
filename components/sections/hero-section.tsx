@@ -38,6 +38,22 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+      <div className="relative bg-gray-100 py-12 flex flex-col items-center">
+        <h1 className="text-4xl font-bold mb-4">Welcome to Bugema Adventist Primary School</h1>
+        <p className="mb-8 text-lg text-gray-700">Empowering students for a brighter future.</p>
+        {/* Online Video */}
+        <div className="w-full max-w-2xl aspect-video rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/RIlvM4ylrMk"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </section>
   )
 }
